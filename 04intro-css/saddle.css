@@ -1,0 +1,134 @@
+body {
+    font-family: 'Space Mono', monospace;
+    font-size: 16px;
+    font-weight: 300;
+    margin: 0;
+    
+}
+
+/* Header Stuff Here*/
+header {
+    background-color: #fdf3e2;
+    padding: 1rem 2vw;
+    font-style: italic;
+    
+}
+header h1 {
+    margin: 0;
+    color: #352420;
+    
+}
+header p {
+    margin: 0;
+    color: #352420;
+    letter-spacing: 0.5px;
+    font-weight: 200;
+}
+
+/* Nav Stuff Goes Here*/
+nav {
+    background-color: #f3ae4f;
+    
+}
+nav ul {
+    list-style-type: none;
+    padding: 0 2vw;
+    margin: 0;
+    display: flex;
+    
+}
+nav a {
+    font-size: 1.1rem;
+    text-decoration: none;
+    color: #fdf3e2;
+    font-weight: 700;
+    display: block;
+    padding: .83rem 2rem;
+    
+}
+nav li.active a{
+    background-color:#214748;
+}
+nav a:hover {
+    color: #cf2d1f;
+    
+}
+
+/* stuff for the main */
+main {
+    padding: 1rem 2vw;
+    
+}
+main h1 {
+    color: #cf2d1f;
+    
+}
+main h2 {
+    color: #214748;
+    margin-bottom: .2rem;
+}
+main p {
+    color: #352420;
+    margin: 0 0 .3rem 0;
+}
+main dl dt {
+    color: #cf2d1f;
+    font-weight: 700;
+    
+}
+main dl dd {
+    color: #214748;
+    font-size: .9rem;
+    
+}
+main ul{
+    list-style-type: georgian;
+    
+}
+main ul li {
+    line-height: 125%;
+    margin-bottom: 0.5rem;
+    font-size: .9rem;
+    
+}
+main h3 {
+    color: #214748;
+    margin-bottom: .2rem;
+    
+}
+main ol {
+    padding: .5rem 3vw;
+    background-color: #fdf3e2;
+}
+main address {
+    color: #fdf3e2;
+    font-style: normal;
+    background-color: #352420;
+    padding: .5rem;
+    width: 12.5rem;
+    border: 1px solid #024873;
+    border-radius: .5rem;
+
+}
+main a {
+    color: #f3ae4f;
+    
+}
+main a:hover {
+    color: rgb(207,45,31);
+    
+}
+
+/* footer stuff goes here*/
+footer {
+    background-color: #fdf3e2;
+    text-align: center;
+    color: #214748;
+    padding: 1rem 0;
+    font-size: .8rem;
+    
+}
+footer a {
+    color: #f3ae4f;
+    
+}
