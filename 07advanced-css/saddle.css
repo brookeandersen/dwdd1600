@@ -1,0 +1,272 @@
+/* Prevent problems with different browsers */
+*{box-sizing: border-box}
+
+body {
+    font-family: 'Space Mono', monospace;
+    font-size: 16px;
+    font-weight: 300;
+    margin: 0;
+    
+}
+
+/* Header Stuff Here*/
+header {
+    background-color: #fdf3e2;
+    padding: 1rem 2vw;
+    font-style: italic;
+    display: flex;
+    align-items: flex-end;
+    
+}
+header div {
+    padding-left: 1vw;
+}
+header h1 {
+    margin: 0;
+    color: #352420;
+    
+}
+header p {
+    margin: 0;
+    color: #352420;
+    letter-spacing: 0.5px;
+    font-weight: 200;
+}
+
+/*SMALL SCREENS*/
+@media only screen and (max-width: 600px) {
+    nav ul {
+        margin: 0;
+        padding: 0 2vw;
+        list-style-type: none;
+    }
+    nav a {
+        display: block;
+        padding: .8rem;
+        text-decoration: none;
+        font-weight: 700;
+        text-transform: uppercase;
+        text-align: center;
+        border-bottom: solid 1px #aaa;
+        color: #214748;
+    }
+    nav .active a {
+        background-color: #f3ae4f;
+        background-image: linear-gradient(to bottom, #f3ae4f, #ee9c2a);
+        color: #352420;
+        
+    }
+    
+} /*end of media query*/
+
+/*BIG SCREENS*/
+@media only screen and (min-width: 601px) {
+    
+    nav {
+    background-color: #f3ae4f;
+
+    }
+    nav ul {
+        list-style-type: none;
+        padding: 0 2vw;
+        margin: 0;
+        display: flex;
+
+    }
+    nav a {
+        font-size: 1.1rem;
+        text-decoration: none;
+        color: #fdf3e2;
+        font-weight: 700;
+        display: block;
+        padding: .83rem 2rem;
+
+    }
+    nav li.active a{
+        background-color:#214748;
+    }
+    nav a:hover {
+        color: #cf2d1f;
+    }
+}/*end of media query*/
+
+
+/* stuff for the main */
+main {
+    padding: 1rem 2vw;
+    
+}
+main h1 {
+    color: #cf2d1f;
+    
+}
+main h2 {
+    color: #214748;
+    margin-bottom: .2rem;
+}
+main p {
+    color: #352420;
+    margin: 0 0 .3rem 0;
+}
+main dl dt {
+    color: #cf2d1f;
+    font-weight: 700;
+    
+}
+main dl dd {
+    color: #214748;
+    font-size: .9rem;
+    
+}
+
+main ul{
+    list-style-type: georgian;
+    
+}
+main ul li {
+    line-height: 125%;
+    margin-bottom: 0.5rem;
+    font-size: .9rem;
+    
+}
+main h3 {
+    color: #214748;
+    margin-bottom: .2rem;
+    
+}
+main ol {
+    padding: .5rem 3vw;
+    background-color: #fdf3e2;
+}
+main address {
+    color: #fdf3e2;
+    font-style: normal;
+    background-color: #352420;
+    padding: .5rem;
+    width: 12.5rem;
+    border: 1px solid #024873;
+    border-radius: .5rem;
+
+}
+main a {
+    color: #f3ae4f;
+    
+}
+main a:hover {
+    color: rgb(207,45,31);
+    
+}
+.pag {
+    width: 100%;
+    margin: 0;
+}
+
+.pag img {
+    width: 100%;
+    height: auto;
+}
+
+figure.wrapped {
+    width: 30%;
+    margin: 0 0 0 2%;
+    float: right;
+}
+
+figure.wrapped img {
+    width: 100%;
+    height: auto;
+}
+
+figure.wrapped figcaption {
+    text-align: center;
+    font-size: .75rem;
+}
+
+div.gallery {
+    display: flex;
+    flex-wrap: wrap;
+}
+div.gallery figure {
+    margin: .5rem 2% 0 0;
+}
+
+div.gallery figcaption {
+    text-align: center;
+    font-size: .8rem;
+    color: #352420; 
+}
+
+div.gallery img:hover {
+    box-shadow: 0px 0px 10px #352420;
+}
+
+
+
+.myForm fieldset {
+    border: 1px solid #214748;
+    border-radius: 3px;
+    margin-bottom: 1rem;
+    
+}
+.myForm fieldset {
+    color: #214748;
+    font-size: .8rem;
+    
+}
+.myForm label {
+    margin: .5rem;
+    
+}
+.myForm label, .myForm select, .myForm [type=text], .myForm [type=tel], .myForm [type=email], .myForm textarea {
+    display: block;
+
+}
+.myForm [type=text], .myForm [type=tel], .myForm [type=email], .myForm select, .myForm textarea {
+    border: solid 1px #352420;
+    padding: .3rem;
+    width: 250px;
+    border-radius: .3rem;
+    font-family: 'Space Mono', monospace;
+    font-size: 16px;
+    
+}
+.myForm textarea {
+    height: 6rem;
+    
+}
+.myForm :required {
+    background-color: rgba(207,45,31,0.1);
+    
+}
+.myForm [type=submit] {
+    background-color: #214748;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    color: #fdf3e2;
+    margin: 1rem 0 0 1vw;
+    font-family: 'Space Mono', monospace;
+    
+}
+
+
+
+/* footer stuff goes here*/
+footer {
+    background-color: #fdf3e2;
+    text-align: center;
+    color: #214748;
+    padding: 1rem 0;
+    font-size: .8rem;
+    
+}
+footer a {
+    color: #f3ae4f;
+    clear: both;
+    
+}
+
+header, nav, main, footer {
+    max-width: 64rem;
+    margin: 0 auto;
+}
