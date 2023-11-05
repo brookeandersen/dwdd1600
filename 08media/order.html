@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Saddle Up Scoops: Home</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="utf-8">
+        <meta name="description" content="Ice Cream and Float shop in Boston, Massachussetts">
+        <meta name="author" content="Brooke Andersen">
+        <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+        <link rel="stylesheet" href="saddle.css">
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com"> 
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+        <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <!-- start of the page header -->
+        <header>
+            <img src="images/horselogo.png" alt="site logo" width="64" height="100">
+            <div>
+                <h1>Saddle Up Scoops</h1>
+                <p>Cool It Cowboy !!!!!!!</p>
+            </div>
+        </header>
+        <!-- start of the page navigation -->
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li class="active"><a href="order.html">Place An Order</a></li>
+                <li><a href="pricing.html">Pricing</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+        <!-- start of the page content -->
+        <main>
+            <h1>Place an Order</h1>
+            <form method="get" class="myForm" action="thanks.html">
+            
+            <fieldset> 
+        <legend>Customer Information</legend>
+        <label>First Name*<input type="text" name="fname" required></label>
+        <label>Last Name*<input type="text" name="lname" required></label>
+        <label>Cell Number*<input type="tel" name="phone" required placeholder="987-555-1234"></label>
+        <label>Email*<input type="email" name="email" required></label>
+        </fieldset> 
+            
+        <fieldset>
+        <legend>Order Summary</legend>
+            <label><input type="checkbox" name="vanilla" value="chosen"> Vanilla</label>
+            <label><input type="checkbox" name="chocolate" value="chosen"> Chocolate is for Winners</label>
+            <label><input type="checkbox" name="brookie" value="chosen"> Death by Brookie Dough</label>
+            <label><input type="checkbox" name="Caramel" value="chosen"> Saltwater Caramel</label>
+        </fieldset>
+                
+        <fieldset>
+        <legend>Delivery Type</legend>
+            <label><input type="radio" name="method" value="delivery">Delivery</label>
+            <label><input type="radio" name="method" value="pickup">Pickup</label>
+            
+            <label>Prefered Delivery/Pickup Time
+            <select name="time">
+            <option value="none">Please Select</option>
+            <option value="morning">Between 8:00am and 11:00am</option>
+            <option value="noon">Between 11:00am and 2:00pm</option>
+            <option value="afternoon">Between 2:00pm and 5:00pm</option>
+            <option value="evening">Between 5:00pm and 7:00pm</option>
+            </select>
+            </label>  
+        </fieldset>
+            
+        <fieldset>
+        <label>Delivery Address
+            <textarea name="address"></textarea>   
+        </label>
+        </fieldset>
+                
+            <input type="submit" value="Place Your Order">
+            </form>
+            
+            
+            
+        </main>
+        <!-- start of the page footer -->
+        <footer>
+            <p>&copy; 2023 &bull; Brooke Andersen &bull; <a href="mailto:brookeandersen27@gmail.com">Email Us</a></p>
+        </footer>
+        
+    </body>
+</html>
