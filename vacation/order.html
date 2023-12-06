@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Alpine Adventures: Home</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="utf-8">
+        <meta name="description" content="Travel Angency based in Colorado">
+        <meta name="author" content="Brooke Andersen">
+        <link rel="stylesheet" href="saddle.css">
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com"> 
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+        <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;500=swap" rel="stylesheet"> 
+    </head>
+    <body>
+        <!-- start of the page header -->
+        <header>
+            <img src="282b6f734fb77226e63741936b7a303d.png" alt="site logo" width="142" height="182">
+            <div>
+                <h1>Alpine Adventures</h1>
+                <p>Where Every Slope Tells a Story!</p>
+            </div>
+        </header>
+        <!-- start of the page navigation -->
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="packages.html">Packages</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="video.html">Video</a></li>
+                <li class="active"><a href="order.html">Contact</a></li>
+            </ul>
+        </nav>
+        <main>
+            <h1>Submit a Request</h1>
+            <form method="get" class="myForm" action="thanks.html">
+            
+            <fieldset> 
+        <legend>Customer Information</legend>
+        <label>First Name*<input type="text" name="fname" required></label>
+        <label>Last Name*<input type="text" name="lname" required></label>
+        <label>Cell Number*<input type="tel" name="phone" required placeholder="987-555-1234"></label>
+        <label>Email*<input type="email" name="email" required></label>
+        </fieldset> 
+                
+        <fieldset>
+        <legend>Package</legend>
+            <label><input type="radio" name="method" value="vail">Vail, Colorado</label>
+            <label><input type="radio" name="method" value="aspen">Aspen, Colorado</label>
+            <label><input type="radio" name="method" value="breckenridge">Breckenridge, Colorado</label>
+            
+            <label>Rental Car Options
+            <select name="time">
+            <option value="none">Please Select</option>
+            <option value="ford">Ford Focus</option>
+            <option value="corrolla">Toyota Corrolla</option>
+            <option value="tacoma">Toyota Tacoma</option>
+            <option value="4runner">4Runner trd pro</option>
+            </select>
+            </label>  
+        </fieldset>
+            
+        <fieldset>
+        <label>Additional things you would like to include in your trip
+            <textarea name="address"></textarea>   
+        </label>
+        </fieldset>
+                
+            <input type="submit" value="Submit Request">
+            </form>
+            
+            
+            
+        </main>
+        <!-- start of the page footer -->
+        <footer>
+            <p>&copy; 2023 &bull; Alpine Adventures &bull; <a href="mailto:brookeandersen27@gmail.com">Email Us</a></p>
+        </footer>
+        
+    </body>
+</html>
